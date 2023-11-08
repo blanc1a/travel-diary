@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --clr-main: #2f3e46;
+  --clr-main-light: #354f52;
+  --clr-hover: #84a98c;
+  --clr-center: #efeee9;
+  --clr-footer: #84a98c;
+}
+
+html {
+  font-family: "Onest", "Raleway", sans-serif;
+  text-align: center;
+  background-color: var(--clr-main);
+  /* background-image: url("Index-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background-color: var(--clr-center);
+  margin: 10rem;
+  padding: 3rem 3rem 3rem 3rem;
+  border-radius: 5rem;
+  box-shadow: 5px 5px 10px var(--clr-main-light);
+}
+#header h1 {
+  font-size: 5rem;
+  justify-content: center;
+  padding: 1rem 1rem 1rem 1rem;
+  font-family: "Homemade Apple", handwriting;
+  color: var(--clr-main-light);
+}
+#header p {
+  font-size: 1.5rem;
+  /* font-family: "Crafty Girls", handwriting; */
+  font-family: "Alexandria", sans-serif;
+}
+#emoji::after {
+  content: " 👋";
+}
+.nav-link {
+  font-size: 2rem;
+  color: var(--clr-hover);
+  font-weight: bold;
+  padding: 1rem 1rem 1rem 1rem;
+  text-decoration: none;
+  font-family: "Shadows Into Light Two", handwriting;
+}
+.nav-link:hover {
+  color: var(--clr-main-light);
+}
+#main {
+  padding: 2rem 2rem 2rem 2rem;
+}
+.link {
+  font-family: "Shadows Into Light Two", handwriting;
+  font-size: 2rem;
+  color: var(--clr-hover);
+  font-weight: bold;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 0;
+  text-decoration: none;
+}
+.link::before {
+  content: "👉 ";
+}
+.link::after {
+  content: " 👈";
+}
+#footer p {
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: var(--clr-main-light);
+  border-radius: 1rem;
+  display: inline-flex;
+  color: var(--clr-center);
+}
+#footer > p > a {
+  padding-left: 0.5rem;
+  text-decoration: none;
+  color: var(--clr-center);
+}
+#footer > p > a:hover {
+  color: var(--clr-hover);
+  font-family: "Alexandria", sans-serif;
+}
